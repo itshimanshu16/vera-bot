@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+vera_state.json
+vera_state.json.tmp
+magicpin-ai-challenge/
+messages.txt
+
