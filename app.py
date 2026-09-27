@@ -70,14 +70,14 @@ def healthz():
 @app.get("/v1/metadata")
 def metadata():
     return {
-        "team_name": os.getenv("TEAM_NAME", "Shaurya Bhardwaj"),
-        "team_members": [m.strip() for m in os.getenv("TEAM_MEMBERS", "Shaurya Bhardwaj").split(",")],
+        "team_name": os.getenv("TEAM_NAME", "Himanshu Gautam"),
+        "team_members": [m.strip() for m in os.getenv("TEAM_MEMBERS", "Himanshu Gautam").split(",")],
         "model": llm.describe(),
         "approach": ("Hybrid: deterministic rules engine picks the single strongest signal per trigger kind and composes from "
                      "verified context facts (no invented data, one CTA, category voice, language pref); optional LLM rewrite is "
                      "number-validated against the contexts with automatic fallback. Stateful reply engine: auto-reply ladder, "
                      "intent->action switch, opt-out/hostile exits, off-topic redirect."),
-        "contact_email": os.getenv("CONTACT_EMAIL", "shauryaarunbhardwaj@gmail.com"),
+        "contact_email": os.getenv("CONTACT_EMAIL", "himanshugautam_23pe029@dtu.ac.in"),
         "version": VERSION,
         "submitted_at": os.getenv("SUBMITTED_AT", STARTED_AT),
     }

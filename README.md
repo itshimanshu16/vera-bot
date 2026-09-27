@@ -1,5 +1,5 @@
 # Vera bot — magicpin AI Challenge
-**Shaurya Bhardwaj** · FastAPI · all 5 endpoints (+ optional `/v1/teardown`)
+**Himanshu Gautam** · FastAPI · all 5 endpoints (+ optional `/v1/teardown`)
 
 ## Approach: rules decide, facts only, LLM optional
 1. **One signal per message.** Each trigger kind maps to a handler (28 handlers covering 42 kind names, plus a generic fallback). The handler picks the single fact that explains *why now*: a digest item with its source and trial size, a 7-day delta, a gap versus peers, a review theme, a batch number, and so on. It then adds **one** likely cause and **one** fix. It never lists every fact.
